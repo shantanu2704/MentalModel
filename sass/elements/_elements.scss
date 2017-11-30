@@ -1,0 +1,66 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit;
+  &:before, &:after {
+    /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+    box-sizing: inherit;
+  }
+}
+
+body {
+  background: $black;
+  /* Fallback for when there is no custom background color defined. */
+}
+
+hr {
+  background-color: $gray1;
+  border: 0;
+  height: 1px;
+  margin: 0 0 1.75em;
+}
+
+/*--------------------------------------------------------------
+# Lists
+--------------------------------------------------------------*/
+@import "lists";
+
+img {
+  height: auto;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */
+  vertical-align: middle;
+}
+
+del {
+  opacity: 0.8;
+}
+
+
+/*--------------------------------------------------------------
+# Tables
+--------------------------------------------------------------*/
+@import "tables";
+
+/* Placeholder text color -- selectors need to be separate to work. */
+
+::-webkit-input-placeholder, :-moz-placeholder {
+  color: $gray2;
+  font-family: $font-family-input;
+}
+
+::-moz-placeholder {
+  color: $gray2;
+  font-family: $font-family-input;
+  opacity: 1;
+  /* Since FF19 lowers the opacity of the placeholder by default */
+}
+
+:-ms-input-placeholder {
+  color: $gray2;
+  font-family: $font-family-input;
+}

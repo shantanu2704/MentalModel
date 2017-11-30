@@ -1,0 +1,115 @@
+button {
+  background: $black;
+  border: 0;
+  border-radius: 2px;
+  color: $white;
+  font-family: $font-family-input;
+  font-weight: 700;
+  letter-spacing: 0.046875em;
+  line-height: 1;
+  padding: 0.84375em 0.875em 0.78125em;
+  text-transform: uppercase;
+  &[disabled] {
+    &:hover, &:focus {
+      background: $black;
+      border: 0;
+      border-radius: 2px;
+      color: $white;
+      font-family: $font-family-input;
+      font-weight: 700;
+      letter-spacing: 0.046875em;
+      line-height: 1;
+      padding: 0.84375em 0.875em 0.78125em;
+      text-transform: uppercase;
+    }
+  }
+}
+
+input {
+  &[type="button"] {
+    background: $black;
+    border: 0;
+    border-radius: 2px;
+    color: $white;
+    font-family: $font-family-input;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.84375em 0.875em 0.78125em;
+    text-transform: uppercase;
+    &[disabled] {
+      &:hover, &:focus {
+        background: $black;
+        border: 0;
+        border-radius: 2px;
+        color: $white;
+        font-family: $font-family-input;
+        font-weight: 700;
+        letter-spacing: 0.046875em;
+        line-height: 1;
+        padding: 0.84375em 0.875em 0.78125em;
+        text-transform: uppercase;
+      }
+    }
+  }
+  &[type="reset"] {
+    background: $black;
+    border: 0;
+    border-radius: 2px;
+    color: $white;
+    font-family: $font-family-input;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.84375em 0.875em 0.78125em;
+    text-transform: uppercase;
+    &[disabled] {
+      &:hover, &:focus {
+        background: $black;
+        border: 0;
+        border-radius: 2px;
+        color: $white;
+        font-family: $font-family-input;
+        font-weight: 700;
+        letter-spacing: 0.046875em;
+        line-height: 1;
+        padding: 0.84375em 0.875em 0.78125em;
+        text-transform: uppercase;
+      }
+    }
+  }
+  &[type="submit"] {
+    background: $black;
+    border: 0;
+    border-radius: 2px;
+    color: $white;
+    font-family: $font-family-input;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.84375em 0.875em 0.78125em;
+    text-transform: uppercase;
+    &[disabled] {
+      &:hover, &:focus {
+        background: $black;
+        border: 0;
+        border-radius: 2px;
+        color: $white;
+        font-family: $font-family-input;
+        font-weight: 700;
+        letter-spacing: 0.046875em;
+        line-height: 1;
+        padding: 0.84375em 0.875em 0.78125em;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+
+button {
+  &:hover, &:focus {
+    background: $blue1;
+  }
+}
+
