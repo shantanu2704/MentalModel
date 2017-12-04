@@ -1,12 +1,12 @@
 <?php
 
-function get_template_include($t) {
+function mm_get_template_include($t) {
     global $mentalmodel_current_templates;
     $mentalmodel_current_templates['main'] = wp_basename($t);
     return $t;
 }
 
-add_filter('template_include', 'get_template_include');
+add_filter('template_include', 'mm_get_template_include');
 
 function mm_get_header($custom) {
     global $mentalmodel_current_templates;

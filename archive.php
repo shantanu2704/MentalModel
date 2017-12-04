@@ -56,7 +56,7 @@ get_header(); ?>
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif;
-                                   do_action(after_archive);
+                                   do_action('after_archive');
 		?>
 
 		</main><!-- .site-main -->

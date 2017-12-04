@@ -126,6 +126,11 @@ function mentalmodel_setup() {
 
 	// Indicate widget sidebars can use selective refresh in the Customizer.
 	add_theme_support( 'customize-selective-refresh-widgets' );
+        
+        require get_template_directory() . '/inc/mm-get-included-files.php';
+
+        
+        require get_template_directory() . '/inc/mm-check-if-the-template-is-loaded.php';
 }
 endif; // mentalmodel_setup
 add_action( 'after_setup_theme', 'mentalmodel_setup' );
@@ -360,12 +365,6 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/mm-check-template-include.php';
 
 require get_template_directory() . '/inc/mm-display-template.php';
-
-require get_template_directory() . '/inc/mm-get-included-files.php';
-
-require get_template_directory() . '/inc/mm-sort-included-files.php';
-
-require get_template_directory() . '/inc/mm-check-if-the-template-is-loaded.php';d 
 
 /**
  * Add custom image sizes attribute to enhance responsive image functionality

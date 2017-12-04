@@ -42,7 +42,7 @@ get_header(); ?>
 
 			// End of the loop.
 		endwhile;
-                                   do_action(after_single);
+                                   do_action('after_single');
 		?>
 
 	</main><!-- .site-main -->
